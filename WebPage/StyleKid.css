@@ -1,0 +1,243 @@
+* {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#container {
+    min-width:240px;
+    max-width:1200px;
+    width:100%;
+    margin:0 auto;
+    background: #7a56df;
+}
+
+#petsimg {
+    width:90%;
+    margin:0 5%;
+}
+
+section {
+    width:90%;
+    margin:0 5%;
+    margin-bottom:10px;
+    border:solid .1em rgb(14,13,13);   
+}
+
+section img {
+    width:70%;
+    margin:0 15%;
+}
+
+section p {
+    width:90%;
+    margin:0 5%;
+    font-size:1.2em;
+    text-shadow:1px 1px rgba(240, 233, 233, 0.3);
+    margin-bottom:5px;
+}
+
+body {
+    background-color:rgb(17, 16, 16);
+    margin-top:0;
+}
+
+#mainNav {
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+#mainNav a {
+    text-decoration:none;
+}
+
+#mainNav ul {
+    display:flex;
+    padding-top:10px;
+    list-style-type: none;
+    justify-content:space-evenly;
+}
+
+#mainNav li {
+    text-transform:capitalize;
+}
+
+header{
+    width:80%;
+    margin:0 10%;
+    background-color: rgba(192, 133, 207, 0.5);
+    background:url(images/goldfish.png) no-repeat;
+    background-position: center center;
+}
+
+header p {
+    font-size:1.2em;
+    padding:10px;
+    color:whitesmoke;  
+    text-shadow: 2px 2px 3px rgb(14,13,13); 
+}
+
+header li {
+    text-transform:uppercase;
+    text-align:center;
+    font-weight:bold;
+    color:whitesmoke;
+    list-style-type:none;
+    text-shadow:2px 2px 3px rgb(14,13,13);
+}
+
+h1 {
+    font-size:2.5em;
+    text-transform:uppercase;
+    color:rgb(233, 110, 38);
+    text-shadow: 3px 3px rgb(14,13,13);
+    text-align:center;
+}
+
+h2 { 
+    text-align:center;
+    text-decoration:underline;
+}
+
+h3 {
+    text-align:center;
+}
+
+section:nth-of-type(1),
+section:nth-of-type(4) {
+    background-color: rgba(24, 224, 198, 0.3);
+}
+
+section:nth-of-type(2),
+section:nth-of-type(5) {
+    background-color: rgba(236, 232, 28, 0.555);
+}
+
+section:nth-of-type(3),
+section:nth-of-type(6) {
+    background-color: rgba(216, 21, 21, 0.3);
+}
+
+.petinfo {
+    color:rgba(19, 22, 226, 0.767);
+    display:flex;
+    justify-content:center;
+    font-size:1.2em; 
+    text-shadow: 2px 2px 4px rgb(14,13,13);
+    width:60%;
+    margin:0 20%;
+    margin-bottom:5px;
+}
+
+footer ul {
+    list-style-type: none;
+    display:flex;
+    justify-content:space-evenly;
+    padding-bottom:10px;
+    color:rgba(19, 22, 226, 0.767);
+    text-shadow: 2px 2px 4px rgb(14,13,13);
+}
+
+@media only screen and (max-width:750px) {
+
+    #mainNav ul {
+        display:block;
+        text-align:center;
+        margin-right:25px;
+    }
+
+    #mainNav li {
+        text-align:center;
+        border:solid .2em rgb(14,13,13);
+        margin-bottom:10px;
+        font-size:2em;
+    }
+
+    #mainNav a {
+        text-shadow:2px 2px 4px rgb(223, 24, 173);
+    }
+
+    #mainNav li:nth-child(even) {
+        background-color:rgb(233, 110, 38);
+    }
+
+    #mainNav li:nth-child(odd) {
+        background-color:rgb(38, 233, 54);
+    }
+
+    #logo {
+        display:none;
+    }    
+}
+
+@media only screen and (max-width:300px) {
+
+    #petsimg {
+        display:none;
+    }
+   
+    header{
+        width:80%;
+        margin:0 10%;
+        background-color: rgba(192, 133, 207, 0.5);
+        background-image:none;
+    }
+
+}
+
+@media only screen and (min-width:750px) {
+    #logo {
+        width:10%;
+        margin:0 45%;
+    }
+
+    #mainNav ul {
+        font-size:1.3em;
+    }
+
+    #mainNav a {
+        text-shadow:2px 2px 4px rgb(223, 24, 173);
+    }
+
+    #mainNav li:nth-child(even) {
+        background-color:rgb(233, 110, 38);
+    }
+
+    #mainNav li:nth-child(odd) {
+        background-color:rgb(38, 233, 54);
+    }
+}
+
+@media only screen and (min-width:1000px) {
+        
+        #mainNav a:hover {
+            color:whitesmoke;
+            background-color:rgb(19, 22, 226);
+        }
+        main a:hover {
+            color:whitesmoke;
+            text-shadow: 2px 2px 8px rgb(14,13,13);
+        }
+
+        main {
+            display:flex;
+            flex-flow:row wrap;
+        }
+
+        section {
+            width:30%;
+            margin-right:15px;
+            margin-left:15px;
+            margin-bottom:10px;
+            border:solid .1em rgb(14,13,13);
+            padding:0;           
+        }
+
+        header{
+            width:70%;
+            margin:0 15%;
+            padding:0;
+            background-color: rgba(192, 133, 207, 0.5);
+            background:url(images/goldfish.png) no-repeat;
+            background-position: center center;
+        }       
+}

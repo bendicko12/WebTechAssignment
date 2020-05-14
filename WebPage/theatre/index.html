@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="description" content="Wages">
+    <title>Tickets</title>
+    <link href="styles/style.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Theatre Tickets</h1>
+    <form id="theatreForm">
+        <fieldset>
+            <legend>Theatre Tickets</legend>
+            <p>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </p>
+            
+            <p>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address">
+            </p>
+
+            <p>
+                <label for="address">Address Line 2:</label>
+                <input type="text" id="address2" name="address2">
+            </p>
+
+            <p>
+                <label for="postCode">Post Code:</label>
+                <input type="text" id="postCode" name="postCode">
+            </p>
+
+            <p>
+                <label for="selectShow">Show:</label>
+                <select id ="selectShow">
+                    <option id="show" value ="show">Select Show</option>
+                    <option id="phantom" value ="Phantom of the Opera">Phantom of the Opera (£79pp)</option>
+                    <option id="hamilton" value ="Hamilton">Hamilton (£85pp)</option>
+                    <option id="lion" value ="Lion King">Lion King (£67pp)</option>
+                    <option id="miss" value ="Miss Saigon">Miss Saigon (£83pp)</option>
+                </select>
+            </p>
+            
+            <p>
+                <label for="tickets">No. of Tickets</label>
+                <input type="number" id="tickets" name="tickets" min="0" max="50" required value="1">
+            </p>
+
+            <p>
+                <label for="delivery">Delivery Method:</label>
+                <select id ="delivery">
+                    <option id="deliveryMethod" value ="deliveryMethod">Delivery Method</option>
+                    <option id="eTicket" value ="eTicket">E-ticket (Free)</option>
+                    <option id="posted" value ="Posted">Posted (£3.99)
+                    </option>
+                    <option id="collection" value ="Collection Box Office">Collect from Box Office (£1.50)</option>               
+                </select>
+            </p>
+            
+            <p>
+                <button type="submit" id="book" name="book">Book Now</button>
+            </p>           
+        </fieldset>   
+        
+        <p id="output"></p>     
+        
+    </form>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

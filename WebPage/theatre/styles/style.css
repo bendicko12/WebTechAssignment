@@ -1,0 +1,26 @@
+body {
+    width:90%;
+    margin:0 5%;
+    background: rgb(26, 26, 26);
+}
+
+form {
+   width: 30%; 
+   
+}
+
+#theatreForm {
+    background: rgb(70, 70, 70);
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px rgb(14,13,13);
+}
+
+h1 {
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px rgb(209, 209, 209);
+}
+
+#output {
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px rgb(14,13,13);
+}

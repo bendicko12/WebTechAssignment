@@ -1,0 +1,269 @@
+* {
+    font-family:'Times New Roman', Times, serif;
+}
+
+#container {
+    min-width:240px;
+    max-width:1200px;
+    width:100%;
+    margin:0 auto;
+    background: whitesmoke;
+}
+
+#petsimg {
+    width: 90%;
+    margin:0 5%;
+}
+
+body {
+    background-color: rgba(236, 177, 68,0.3);
+    margin-top:0;
+}
+
+section {
+    width:90%;
+    margin:0 5%;
+    font-size:1.1em;
+    background-color:rgba(240, 215, 169, 0.733);
+    border-style:ridge;
+    border-color:rgba(14,13,13,0.7);
+    border-width:3px;
+}
+
+section p {
+    width: 90%;
+    margin:0 5%;
+    padding-bottom:5px;
+
+}
+
+section a {
+    text-shadow: 2px 2px 4px rgb(14,13,13);
+    color:rgba(19, 22, 226, 0.767);
+}
+
+.petinfo {
+    
+    display:flex;
+    justify-content:flex-end;
+    font-size:1.2em; 
+    text-shadow: 2px 2px 4px rgb(14,13,13);
+    color:rgba(19, 22, 226, 0.767);
+    margin-bottom:5px;
+    text-transform:capitalize;
+
+}
+
+section img {
+    width:20%;
+    height:100px;
+    padding-top:0;
+}
+
+#mainNav {
+    width:100%;
+    margin:0;
+    padding:0;
+    position:sticky;
+    top:0;
+}
+
+#mainNav a {
+    text-decoration:none;
+}
+
+#mainNav ul {
+    display:flex;
+    margin:0;
+    padding-bottom:5px;
+    list-style-type: none;
+    justify-content:space-evenly;
+}
+
+#mainNav li {
+    text-transform:capitalize;
+    margin:0;  
+}
+
+h1 {
+    text-decoration:underline;
+    font-weight:normal;
+    text-transform:capitalize;
+    text-align:center;
+    text-shadow:2px 2px 3px rgb(14,13,13);  
+}
+
+h3 {
+    text-align:center;
+    text-transform:capitalize;
+    text-shadow:1px 1px 3px rgb(14, 13, 13);
+    text-decoration:underline;
+}
+
+header {
+    border-bottom:solid .1em rgba(236, 177, 68,0.3);
+}
+
+header p {
+    width:80%;
+    margin:0 10%;
+    margin-bottom:10px;
+    font-size:1.1em;
+}
+
+header li {
+    width:80%;
+    margin:0 10%;
+}
+
+main li::first-letter {
+    text-transform:uppercase;
+}
+
+h2 {
+    margin-top:0;
+    text-decoration:underline;
+    text-shadow:2px 2px 3px rgb(14,13,13);
+    font-weight:normal;
+}
+
+footer ul {
+    list-style-type: none;
+    display:flex;
+    justify-content:space-evenly;
+    padding-bottom:10px;
+    color:rgba(19, 22, 226, 0.767);
+    text-shadow: 2px 2px 4px rgb(14,13,13);
+    
+}
+
+@media only screen and (max-width:750px) {
+
+    #mainNav ul {
+        display:block;
+        text-align:center;
+        margin-right:25px;
+    }
+
+    #mainNav li {
+        text-align:center;
+        border:solid .13em rgb(14,13,13);
+        margin-bottom:3px;
+        font-size:1.3em;
+    }
+
+    #mainNav a {
+        text-shadow:2px 2px 4px rgb(14, 13, 13);
+        color: rgb(32, 32, 32)
+    }
+
+    #mainNav li:nth-child(even) {
+        background-color:rgb(240, 215, 169);
+    }
+
+    #mainNav li:nth-child(odd) {
+        background-color:whitesmoke;
+    }
+
+    #logo {
+        display:none;
+    }  
+}
+
+
+@media only screen and (max-width:300px) {
+
+    #petsimg {
+        display:none;
+    }
+   
+    header {
+        background-image:none;
+    }
+
+}
+
+
+@media only screen and (min-width:750px) {
+
+    #mainNav {
+        background-color:rgba(240, 215, 169, 0.733); 
+    }
+
+    .top {
+        display:flex;
+        margin-top:30px;
+    }
+    
+    #mainNav ul {
+        padding-top:25px;
+        padding-bottom:25px;
+    }
+
+    #mainNav a {
+        font-size:1.2em;
+        color:rgb(14, 13, 13);
+        text-shadow:2px 2px 4px rgb(14,13,13);
+        text-decoration:underline;
+        padding-left:20px;
+    }
+
+    #logo {
+        width:10%;
+        position:fixed;
+        padding-top:4px;
+    }
+
+    #mainNav li:nth-child(n+2) {
+        border-left:solid .2em rgb(32, 32, 32);
+    }
+}
+
+@media only screen and (min-width:1000px) {
+        
+    #mainNav a:hover {
+        color:whitesmoke;   
+    }
+    main a:hover {
+        color:whitesmoke;
+        text-shadow: 2px 2px 8px rgb(14,13,13);
+    }
+
+    main {
+        display:flex;
+        flex-flow:row wrap;
+    }
+
+    section {
+        width:30%;
+        margin-right:15px;
+        margin-left:15px;
+        margin-bottom:10px;
+        padding:0;   
+    }
+
+    #mainNav a {
+        padding-left:30px;
+    }
+
+    header{
+        width:70%;
+        margin:0 15%;
+        padding:0;
+    }
+
+    section img {
+        width:70%;
+        margin:0 15%;
+        height:150px;
+    }
+
+    #logo {
+        height:70px;
+        width:5%;
+    }
+
+    header {
+        border-bottom:hidden;
+    }  
+}

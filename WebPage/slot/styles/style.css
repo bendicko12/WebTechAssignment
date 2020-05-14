@@ -1,0 +1,50 @@
+body {
+    width:30%;
+    margin:0 35%;
+    border: solid 1px rgb(88, 255, 37);
+    margin-top:20px;
+    background:rgb(47, 44, 223)
+}
+
+#images {
+    text-align:center;
+}
+
+#winnings,
+#credit {
+    text-align:center;
+    padding-top:10px;
+    color:whitesmoke;
+    text-shadow: 2px 2px 4px rgb(14,13,13);
+    font-size:1.8em;
+}
+
+#buttons {
+    text-align:center;
+    padding-bottom:10px;
+    display:flex;
+    justify-content:space-evenly;
+}
+
+#top {
+    display:flex;
+    justify-content:space-evenly;
+}
+
+#pWinnings,
+#pCredit {
+    background-color:rgb(14,13,13);
+}
+
+#message {
+    text-align:center;
+    border:solid 1px rgb(88,255,37);
+    width: 50%;
+    margin: 0 auto;
+    padding: 5px;
+    color:whitesmoke;
+}
+
+#displayMessage {
+    padding:10px;
+}
